@@ -1,2 +1,4 @@
 node_modules/
 hello-solana/test-ledger/
+MATH_STUFF/src/square/target/
+MATH_STUFF/src/sum/target/
