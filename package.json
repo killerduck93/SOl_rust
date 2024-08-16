@@ -1,5 +1,30 @@
 {
+  "name": "hello-solana",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+      "type": "git",
+      "url": ""
+  },
+  "scripts": {
+      "start": "ts-node C:/Mywork/Rust_project/Solana_rust_git/hello-solana/src/client/main.ts",
+      "clean": "npm run clean:program",
+      "rebuild": " npm rebuild",
+      "build:program": "cargo build-sbf --manifest-path=C:/Mywork/Rust_project/Solana_rust_git/hello-solana/src/program/Cargo.toml --sbf-out-dir=dist/program",
+      "clean:program": "cargo clean --manifest-path=C:/Mywork/Rust_project/Solana_rust_git/hello-solana/src/program/Cargo.toml && rm -rf ./dist",
+      "test:program": "cargo test-sbf --manifest-path=C:/Mywork/Rust_project/Solana_rust_git/hello-solana/src/program/Cargo.toml"
+  },
   "dependencies": {
-    "@solana/web3.js": "^1.95.2"
+      "@solana/web3.js": "^1.95.2",
+      "mz": "^2.7.0"
+  },
+  "devDependencies": {
+      "@tsconfig/recommended": "^1.0.1",
+      "@types/mz": "^2.7.2",
+      "ts-node": "^10.0.0",
+      "typescript": "^4.0.5"
+  },
+  "engines": {
+      "node": ">=14.0.0"
   }
 }
